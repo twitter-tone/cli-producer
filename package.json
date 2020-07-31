@@ -1,0 +1,28 @@
+{
+  "name": "retrieve-tweets",
+  "version": "1.0.0",
+  "description": "Retrieve Donald's tweets and publish to a kafka broker",
+  "private": true,
+  "main": "app.js",
+  "scripts": {
+    "lint": "semistandard",
+    "start": "node app.js",
+    "consume": "node consumer.js"
+  },
+  "author": "Andrew Hughes",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/trump-tweets/retrieve-tweets",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/trump-tweets/retrieve-tweets.git"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "kafkajs": "^1.12.0",
+    "inquirer": "^7.3.2"
+  },
+  "devDependencies": {
+    "semistandard": "^14.2.2",
+    "tap": "^14.10.7"
+  }
+}
